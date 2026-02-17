@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 import random
 
-from dependency import get_question, get_user_status, get_logger
+from dependency import get_question, get_user_status
 from services.exception import InvalidInputError
 from services.validators import validate_input_str_with_set, validate_input_str_without_strip
 import logging
@@ -281,8 +281,7 @@ async def upload_files_using_filepath(
 @router.get("/display_all")
 async def display_all_questions(
     questions_obj = Depends(get_question),
-    user_status = Depends(get_user_status),
-    logger = Depends(get_logger)
+    user_status = Depends(get_user_status)
     ):
 
     try:

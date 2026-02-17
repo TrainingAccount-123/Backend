@@ -13,6 +13,3 @@ async def get_user_status(request : Request, username : str):
     except InvalidInputError as iie:
         raise HTTPException(status_code=403,detail=f"{iie}")
 
-def get_logger(request : Request):
-    return request.app.state.logger
-

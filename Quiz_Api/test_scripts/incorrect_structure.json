@@ -1,0 +1,34 @@
+[
+    {
+        "id": "11",
+        "question_text": "Which operating system is developed by Apple for desktop computers?",
+        "answer": "macOS",
+        "optionA": "Windows",
+        "optionB": "Linux"
+    },
+    {
+        "qid": "12",
+        "question": "What does CPU stand for in computing?",
+        "correct_answer": "Central Processing Unit"
+    },
+
+    {
+        "qid": "13",
+        "question": "Which protocol is primarily used to browse websites?",
+        "correct_answer": "HTTP",
+        "option1": "FTP",
+        "option2": 123,
+        "option3": null,
+        "extra_field": "not allowed"
+    },
+
+    {
+        "qid": "14",
+        "correct_answer": "Guido van Rossum",
+        "option1": "Dennis Ritchie",
+        "option2": "Bjarne Stroustrup",
+        "option3": "James Gosling"
+    },
+
+    "This is completely invalid element instead of object"
+]

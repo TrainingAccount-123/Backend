@@ -1,0 +1,186 @@
+[
+    {
+        "qid": "1",
+        "question": "Which operating system is developed by Apple for desktop computers?",
+        "correct_answer": "macOS",
+        "option1": "Windows",
+        "option2": "Linux",
+        "option3": "Android"
+    },
+    {
+        "qid": "2",
+        "question": "What does CPU stand for in computing?",
+        "correct_answer": "Central Processing Unit",
+        "option1": "Computer Personal Unit",
+        "option2": "Central Program Utility",
+        "option3": "Control Processing Unit"
+    },
+    {
+        "qid": "3",
+        "question": "Which protocol is primarily used to browse websites?",
+        "correct_answer": "HTTP",
+        "option1": "FTP",
+        "option2": "SMTP",
+        "option3": "SSH"
+    },
+    {
+        "qid": "4",
+        "question": "Which company created the Python programming language?",
+        "correct_answer": "Guido van Rossum",
+        "option1": "Dennis Ritchie",
+        "option2": "Bjarne Stroustrup",
+        "option3": "James Gosling"
+    },
+    {
+        "qid": "5",
+        "question": "Which number system is used internally by computers?",
+        "correct_answer": "Binary",
+        "option1": "Decimal",
+        "option2": "Octal",
+        "option3": "Hexadecimal"
+    },
+    {
+        "qid": "20",
+        "question": "What is the capital of germany?",
+        "correct_answer": "berlin",
+        "option1": "paris",
+        "option2": "london",
+        "option3": "new delhi"
+    },
+    {
+        "qid": "21",
+        "question": "Which data structure uses the last in, first out (lifo) principle?",
+        "correct_answer": "Stack",
+        "option1": "Queue",
+        "option2": "Array",
+        "option3": "Linked List"
+    },
+    {
+        "qid": "22",
+        "question": "What does ram stand for in computing?",
+        "correct_answer": "Random Access Memory",
+        "option1": "Read Access Memory",
+        "option2": "Rapid Application Module",
+        "option3": "Run Access Method"
+    },
+    {
+        "qid": "23",
+        "question": "Which programming language is primarily used for styling web pages?",
+        "correct_answer": "CSS",
+        "option1": "HTML",
+        "option2": "Python",
+        "option3": "C++"
+    },
+    {
+        "qid": "24",
+        "question": "Which http method is typically used to retrieve data from a server?",
+        "correct_answer": "GET",
+        "option1": "POST",
+        "option2": "DELETE",
+        "option3": "PUT"
+    },
+    {
+        "qid": "25",
+        "question": "Which database language is used to manage relational databases?",
+        "correct_answer": "SQL",
+        "option1": "HTML",
+        "option2": "JSON",
+        "option3": "YAML"
+    },
+    {
+        "qid": "26",
+        "question": "Which sorting algorithm has an average time complexity of o(n log n)?",
+        "correct_answer": "Merge Sort",
+        "option1": "Bubble Sort",
+        "option2": "Linear Search",
+        "option3": "Insertion Sort"
+    },
+    {
+        "qid": "27",
+        "question": "Which keyword is used to define a function in python?",
+        "correct_answer": "def",
+        "option1": "function",
+        "option2": "func",
+        "option3": "define"
+    },
+    {
+        "qid": "28",
+        "question": "Which layer of the osi model is responsible for routing packets?",
+        "correct_answer": "Network Layer",
+        "option1": "Transport Layer",
+        "option2": "Application Layer",
+        "option3": "Physical Layer"
+    },
+    {
+        "qid": "29",
+        "question": "Which http method is idempotent and typically used to add a resource?",
+        "correct_answer": "POST",
+        "option1": "PUT",
+        "option2": "PATCH",
+        "option3": "CONNECT"
+    },
+    {
+        "qid": "30",
+        "question": "Which http status code indicates that a resource was successfully created?",
+        "correct_answer": "201",
+        "option1": "200",
+        "option2": "204",
+        "option3": "400"
+    },
+    {
+        "qid": "31",
+        "question": "Which data structure is typically used to implement recursion internally?",
+        "correct_answer": "Stack",
+        "option1": "Queue",
+        "option2": "Heap",
+        "option3": "Hash Table"
+    },
+    {
+        "qid": "32",
+        "question": "Which command is used to initialize a new git repository?",
+        "correct_answer": "git init",
+        "option1": "git start",
+        "option2": "git new",
+        "option3": "git create"
+    },
+    {
+        "qid": "33",
+        "question": "Which database constraint ensures that all values in a column are unique?",
+        "correct_answer": "UNIQUE",
+        "option1": "PRIMARY KEY",
+        "option2": "FOREIGN KEY",
+        "option3": "INDEX"
+    },
+    {
+        "qid": "34",
+        "question": "Which python data type is immutable?",
+        "correct_answer": "Tuple",
+        "option1": "List",
+        "option2": "Dictionary",
+        "option3": "Set"
+    },
+    {
+        "qid": "35",
+        "question": "Which algorithm is commonly used for finding the shortest path in a graph with non-negative weights?",
+        "correct_answer": "Dijkstra's Algorithm",
+        "option1": "Binary Search",
+        "option2": "Depth-First Search",
+        "option3": "Bubble Sort"
+    },
+    {
+        "qid": "36",
+        "question": "Which port number is the default for https?",
+        "correct_answer": "443",
+        "option1": "80",
+        "option2": "21",
+        "option3": "25"
+    },
+    {
+        "qid": "37",
+        "question": "Which http method is idempotent and typically used to fully replace a resource?",
+        "correct_answer": "PUT",
+        "option1": "POST",
+        "option2": "PATCH",
+        "option3": "CONNECT"
+    }
+]

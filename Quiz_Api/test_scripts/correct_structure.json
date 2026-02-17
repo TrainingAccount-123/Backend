@@ -1,0 +1,66 @@
+[
+    {
+        "qid": "401",
+        "question": "Which layer of the OSI model is responsible for routing packets?",
+        "correct_answer": "Network Layer",
+        "option1": "Transport Layer",
+        "option2": "Application Layer",
+        "option3": "Physical Layer"
+    },
+    {
+        "qid": "402",
+        "question": "Which HTTP status code indicates that a resource was successfully created?",
+        "correct_answer": "201",
+        "option1": "200",
+        "option2": "204",
+        "option3": "400"
+    },
+    {
+        "qid": "403",
+        "question": "Which data structure is typically used to implement recursion internally?",
+        "correct_answer": "Stack",
+        "option1": "Queue",
+        "option2": "Heap",
+        "option3": "Hash Table"
+    },
+    {
+        "qid": "404",
+        "question": "Which command is used to initialize a new Git repository?",
+        "correct_answer": "git init",
+        "option1": "git start",
+        "option2": "git new",
+        "option3": "git create"
+    },
+    {
+        "qid": "405",
+        "question": "Which database constraint ensures that all values in a column are unique?",
+        "correct_answer": "UNIQUE",
+        "option1": "PRIMARY KEY",
+        "option2": "FOREIGN KEY",
+        "option3": "INDEX"
+    },
+    {
+        "qid": "406",
+        "question": "Which Python data type is immutable?",
+        "correct_answer": "Tuple",
+        "option1": "List",
+        "option2": "Dictionary",
+        "option3": "Set"
+    },
+    {
+        "qid": "407",
+        "question": "Which algorithm is commonly used for finding the shortest path in a graph with non-negative weights?",
+        "correct_answer": "Dijkstra's Algorithm",
+        "option1": "Binary Search",
+        "option2": "Depth-First Search",
+        "option3": "Bubble Sort"
+    },
+    {
+        "qid": "408",
+        "question": "Which port number is the default for HTTPS?",
+        "correct_answer": "443",
+        "option1": "80",
+        "option2": "21",
+        "option3": "25"
+    }
+]

@@ -1,0 +1,146 @@
+Create a quiz generator where the user can add questions, remove questions, edit questions and start a quiz which will print a number of random questions from the pool of questions as decided by the user and display score at the end of the quiz. persist the quiz to json.
+
+File Structure and Responsibilities:
+
+1. file_handler.py:
+- contains class FileHandler
+- responsible for read and write operations to json
+
+2. users.py:
+- contains class Users
+- responsible for handling all authentication related to the user
+- contains path to users.csv wiht all the login details for every user
+
+2. questions.py:
+- contains class Questions
+- responsible for storing the questions and the correct answers
+- responsible for generating the quiz
+
+3. main.py:
+- contains get_valid_input() and main()
+- responsible for interacting with the user
+
+json Structure:
+
+{
+    ID:             (question id, generated automatically)
+    Question:       (contains the question for the quiz)
+    Correct_Answer: (contains the correct answer)
+    Option1 :       (contains an incorrect answer as an option to display)
+    Option2 :       (contains an incorrect answer as an option to display)
+    Option3 :       (contains an incorrect answer as an option to display)
+}
+
+csv structure:
+
+[
+    username : (username)
+    password : (password)
+    status :   (admin or user)
+]
+
+Summary:
+A quiz system with a login features, a local json to persist questions, admin/user status based action choices, admins can add users
+
+START
+main.py:
+
+imports:
+from questions import Questions
+from 
+
+1. Login
+- Loads an object of Users
+- asks user to input username and password
+- if valid input, saves username of current user and status of the current user as admin or user. admins have more priveleges than users. any admin priveleges unavailable to users will be listed with "(admin choice only)" accompanying it
+- if invalid input, implements 5 retries before closing the system
+
+
+3. Start main CLI loop
+- Loads object of Questions
+- Asks the user to input a choice.
+- Available Choices:
+1. Add Question (admin choice only)
+2. Edit Question (admin choice only)
+3. Remove Question (admin choice only)
+4. Clear Questions (admin choice only)
+5. Start Quiz 
+6. Upload JSON (admin choice only)
+7. Add User (admin choice only)
+8. Remove User (admin choice only)
+9. Change Password
+10. Logout and close system
+
+4. Function calls based on the choice
+- On choice 1:
+-- displayed only if user is admin
+-- asks for inputs on question, correct answer, option1, option2 and option3
+-- on confirming all inputs are valid, calls Questions.add_question with the respective parameters
+-- Questions.add_question persists the added question to the local JSON
+
+- On choice 2:
+-- displayed only if user is admin
+-- asks for input of question id
+-- on confirming valid question id, asks for new question, correct answer, option1, option2 and option3 with options to retain any fields
+-- on confirming above inputs, calls Questions.edit_question
+-- Questions.edit_question persists all changes to the local json
+
+- On choice 3:
+-- displayed only if user is admin
+-- asks for input of question id
+-- on confirming valid id format, calls Questions.remove_question with the respective parameters
+-- Questions.remove_question persists all changes to the local json
+
+- On choice 4:
+-- displayed only if user is admin
+-- calls Questions.clear_questions()
+-- removes all entries in the local json
+
+- On choice 5:
+-- asks for input on how many questions the quiz should be. (let the input given be n)
+-- calls Questions.get_ids to get a list of question ids available and validates if the user input is smaller than the length of this list
+-- if not valid:
+--- raises error then moves to STEP 5
+-- if valid:
+--- generates n random ids in a list and calls Questions.get_questions to get the questions and options list. questions and options are randomised in this step
+--- presents the items in the questions and options list to the user one-by-one and calculates the score
+
+- On choice 6:
+-- displayed only if user is admin
+-- asks for input to a path to json
+-- if path does not exist, raises error the moves to STEP 5
+-- if path exists, reads json and validates structure based on availability of the ID, Question, Correct_Answer, Option1, Option2, Option3 keys
+--- if new structure is valid, persists values to local json file, questions will be given from there
+--- if new structure is invalid, raises error, moves to STEP 5
+
+- On choice 7:
+-- displayed only if user is admin
+-- asks user to input new user's username, password and status (admin/user)
+-- calls Users.add_user() with respective parameters and if the username is already existing, raises error and moves to STEP 5
+
+- On choice 8:
+-- displayed only if user is admin
+-- asks user to input username
+-- if usernameis not current user, calls Users.remove_user() with username as the parameters
+--- if input username had admin status or if input username does not exist, raises error and moves ot STEP 5
+--- else removes user with username as inputted
+
+- On choice 9:
+-- asks for old password
+-- if correct, asks for new password and to confirm new password. if both match, calls Users.edit_password with the current username as the username and edits the password accordingly
+-- if wrong, raises error and allows upto 5 retries, then moves to STEP 5
+
+- On choice 10:
+-- closes the system, END
+
+
+5. Ask the user if they wish to continue(y/n):
+- if y:
+-- move to STEP 2
+- if neither n nor y:
+-- STEP 5
+- if n:
+-- END
+
+
+C:/Users/SkandaSankarRaman/OneDrive - GapBlue Software Labs Pvt Ltd/Work/live_coding/Quiz_Api/incorrect_structure.json

@@ -1,0 +1,123 @@
+Write a calculator class that performs 4 functions - add, subtract, multiply and divide
+Create a custom exception NotAFloatError that is raised when the user input is not a number
+Use proper exception handling techniques to verify the validity of the inputs
+write a menu driven main loop to allow the user to perform any of these functions at will
+
+Write a calculator in python that performs add, subtract multiply and divide. write a menu driven main loop with custom exceptions to allow for user interaction
+
+
+
+
+file structure:
+
+arithmetic.py
+exceptions.py
+main.py
+
+
+arithmetic.py:
+contains class Arithmetic - 
+ contains functions add, subtract, multiply, divide
+ add - returns the sum of 2 numbers provided as parameters
+ subtract - returns the difference of 2 numbers provided as parameters
+ multiply - returns the product of 2 numbers provided as parameters
+ divide - returns the quotient of 2 numbers provided as parameters. if the second number(denominator) is 0, raises DivisionByZeroError
+
+exceptions.py:
+contains custom exceptions class NotANumberError
+
+main.py
+valid_input function:
+returns a valid input of a numbers when called
+validation is done by raising a custom exception
+has a while loop till the user enters a valid output
+
+START
+main function:
+choices given to the user:
+add -
+ calls the add function from the Arithmetic class object
+ asks for input for 2 numbers using the valid_input function
+ prints the sum of the two given numbers
+ 
+subtract -
+ calls the subtract function from the Arithmetic class object
+ asks for input for 2 numbers using the valid_input function
+ prints the difference of the second number subtracted from the first number
+
+multiply -
+ calls the multiply function from the Arithmetic class object
+ asks for input for 2 numbers using the valid_input function
+ prints the product of the 2 numbers
+
+divide -
+ calls the divide function from the Arithmetic class object
+ asks for input for 2 numbers using the valid_input function
+ prints the quatient of the first number divided by the second number
+ catches DivisionByZeroError if raised
+
+
+
+
+
+file structure and responsibilities:
+
+arithmetic.py:
+- contains a class Arithmetic that defines the functions add, subtract, multiply and divide
+- provides the core mathematical operations for the calculator
+
+exceptions.py:
+- contains a class NotANumberError that is used as a custom exception
+- defines a custom exception that is raised for validation of inputs
+
+main.py:
+- contains functions valid_input, main
+- interacts with the user
+
+
+START:
+
+main.py
+imports:
+-from arithmetic import Arithmetic
+-from exceptions import NotANumberError
+
+STEP 1: 
+get user input on choice based on the choices provided:
+-add
+-subtract
+-multiply
+-divide
+-exit
+
+STEP 2: 
+on valid choice:
+-get input of 2 numbers using the valid_input() function
+-valid_input() allows for retries when giving input till the input is a valid operations, and raises the custom exception on invalid input
+if choice is exit:
+-moves to END
+
+STEP 3:
+call the function based on user
+-if user choice is add:
+--calls add function in Arithmetic class, returning sum of 2 taken inputs
+-if user choice is subtract:
+--calls subtract function in Arithmetic class, returning difference of 2 taken inputs
+-if user choice is multiply:
+--calls multiply function in Arithmetic class, returning product of 2 taken inputs
+-if user choice is divide:
+--calls divide function in Arithmetic class, returning quotient of 2 taken inputs, or Invalid Input if the divisor is 0
+
+STEP 4:
+Ask the user if they wish to continue(y/n):
+-if y:
+--STEP 1
+-if n:
+--END
+if neither of y or n:
+--STEP 4
+
+
+
+
+
